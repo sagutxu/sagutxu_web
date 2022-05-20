@@ -1,0 +1,209 @@
+/* RESET GENERAL */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #334;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+}
+
+header {
+    background: #fff;
+}
+
+/* MENU PRINCIPAL */  
+.menu {
+    font-size: 0;
+    color: #999;
+    text-align: right;
+}
+
+.menu * {
+   font: normal 1rem/1 "Myriad", Arial, Helvetica, sans-serif;
+   color: #334;
+}
+  
+.menu > li {
+    display: inline-block;
+}
+
+.menu > li + li {
+    border-left: solid 1px #334;
+}
+
+.menu li a {
+   display: inline-block;
+   padding: 0.625rem 1.25rem;
+   text-decoration: none;
+}
+
+.menu li:hover {
+    background: #fc9;
+    cursor: pointer;
+}
+
+.borgar {
+    cursor: pointer;
+    display: none;
+    width: 3.125rem;
+    height: 3.125rem;
+    background: #fff;
+    border: 0;
+}
+
+.menu-img {
+    margin-top: 3vh;
+    width: 100%;
+    display: none;
+}
+
+.bg2 {
+    left: 0;
+}
+
+@media only screen and (max-width: 1280px) and (min-aspect-ratio: 16/10), 
+only screen and (max-width: 1024px) and (aspect-ratio: 4/3),
+only screen and (orientation: portrait),
+only screen and (max-width: 768px) and (orientation: landscape) {
+    html, body {
+        height: 100%;
+    }
+
+    .borgar {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        position: absolute;
+        z-index: 9999;
+    }
+
+    .bg2 {
+        left: 20rem;
+    }
+
+    header {
+        display: inline-block;
+        position: absolute;
+        z-index: 9999;
+    }
+       
+    .menu, header {
+        width: 20rem;
+        height: 100vh;
+        text-align: center;
+    }
+
+    .menu > li:nth-child(1) {
+        margin-top: 1rem;
+    }
+
+    .menu > li {
+        display: block;
+    }
+
+    .menu > li + li {
+        padding-top:  1rem;
+        padding-bottom: 1rem;
+        border-left: none;
+    }
+
+    .menu * {
+        font-size: 1.5rem;
+    }
+
+    .menu li:nth-child(3),
+    .menu li:nth-child(5) {
+        border-bottom: 1px solid #334;;
+    }
+
+    .menu-img {
+        display: block;
+    }
+
+    .hidden {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    header {
+        width: initial;
+        height:initial;
+        position: absolute;
+        z-index: 9999;
+    }
+
+    .menu > li:nth-child(1) {
+        margin-top: 1rem;
+    }
+
+    .menu > li + li {
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+    }
+    
+    .menu li:nth-child(3),
+    .menu li:nth-child(5) {
+        border-bottom: 1px solid #334;;
+    }
+
+    .menu-img {
+        display: block;
+    }
+
+    .borgar {
+        display: inline-block;
+        position: absolute;
+        z-index: 9999;
+    }
+
+    .bg2 {
+        left: initial;
+    }
+  
+    .hidden {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    header {
+        width: 70%;
+        position: absolute;
+        z-index: 9999;
+    }
+
+    .borgar {
+        position: absolute;
+        z-index: 9999;
+    }
+
+    .bg2 {
+        left: 70%;
+    }
+
+    .menu > li:nth-child(1) {
+        margin-top: 1rem;
+    }
+
+    .menu > li + li {
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+    }
+
+    .menu {
+        width: 100% !important;
+    }
+    
+    .menu li:nth-child(3),
+    .menu li:nth-child(5) {
+        border-bottom: 1px solid #334;;
+    }
+
+    .menu-img {
+        display: block;
+    }
+}

@@ -1,0 +1,60 @@
+section {
+    display: flex;
+    -webkit-display: flex;
+    -moz-display: flex;
+    -o-display: flex;
+    flex-flow: row;
+    -webkit-flex-flow: row;
+    -moz-flex-flow: row;
+    -o-flex-flow: row;
+}
+
+section > article#gauge {
+    display: flex;
+    -webkit-display: flex;
+    -moz-display: flex;
+    -o-display: flex;
+    flex-flow: column;
+    -webkit-flex-flow: column;
+    -moz-flex-flow: column;
+    -o-flex-flow: column;
+    height: 100vh;
+    width: 40%;
+}
+
+section > article#gauge div {
+    width: 100%;
+    height: 100%;
+}
+
+section > article#bar {
+    display: flex;
+    -webkit-display: flex;
+    -moz-display: flex;
+    -o-display: flex;
+    flex-flow: row;
+    -webkit-flex-flow: row;
+    -moz-flex-flow: row;
+    -o-flex-flow: row;
+    width: 60%;
+    height: 100vh;
+}
+
+section > article#bar div {
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 1280px) and (min-aspect-ratio: 16/10), 
+only screen and (max-width: 1024px) and (aspect-ratio: 4/3),
+only screen and (orientation: portrait),
+only screen and (max-width: 768px) and (orientation: landscape) {
+    section {
+        flex-flow: column;
+        -webkit-flex-flow: column;
+        -moz-flex-flow: column;
+        -o-flex-flow: column;
+    }
+
+    section 
+}
